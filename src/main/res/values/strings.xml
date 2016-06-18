@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">PiUI</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_second">Console</string>
+    <string name="title_activity_credits">Credits</string>
+
+    <!-- buttons -->
+    <string name="btn_console">Open console</string>
+    <string name="btn_credits">Credits</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_send">Send</string>
+
+    <!-- credits -->
+    <string name="credits_design">Logo and app design</string>
+    <string name="credits_python">Python Code</string>
+    <string name="credits_android">Android Code</string>
+    <string name="credits_paul" translatable="false">Paul Kunze</string>
+    <string name="credits_richard" translatable="false">Richard McIntosh</string>
+    <string name="credits_more">For more cool projects, please visit:</string>
+
+    <!-- Toasts and listViews -->
+    <string name="no_internet">No internet connection</string>
+    <string name="connected">Connected</string>
+    <string name="connect_failed">Connecting failed</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnect_failed">Disconnecting failed</string>
+    <string name="publish_failed">Publishing failed</string>
+    <string name="subscribed">Topic is subscribed</string>
+    <string name="subscribe_failed">Subscribing failed</string>
+    <string name="unsubscribed">Topic is unsubscribed</string>
+    <string name="unsubscribe_failed">Unsubscribing failed</string>
+
+    <!-- settings activity -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="server">Server:</string>
+    <string name="port">Port:</string>
+    <string name="client" translatable="false">Client ID:</string>
+    <string name="topicIn">Send to:</string>
+    <string name="topicOut">Receive from:</string>
+    <string name="btn_save">Save settings</string>
+    <string name="btn_save_script">Save the Python script for the RaspberryPi to the internal memory (root directory)</string>
+    <string name="toast_saved">Saved the settings</string>
+    <string name="script_saved">The script was saved</string>
+
+    <!-- enter name dialog -->
+    <string name="name_title">Enter your name</string>
+    <string name="name_description">Please enter your name. It can be changed later in the settings menu.</string>
+    <string name="name_hint">Your name</string>
+    <string name="name_save">Save</string>
+
+</resources>
