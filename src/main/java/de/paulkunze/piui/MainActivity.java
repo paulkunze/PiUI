@@ -1,6 +1,7 @@
 package de.paulkunze.piui;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import de.paulkunze.piui.mqtt.UserData;
 
 /* Entry point for the app. Shows a start screen with a logo and some buttons */
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // load the user settings
+        UserData.loadSettings(getSharedPreferences("SETTINGS", Activity.MODE_PRIVATE));
         enterNameOnFirstRun();
     }
 

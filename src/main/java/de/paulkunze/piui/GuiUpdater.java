@@ -2,6 +2,7 @@ package de.paulkunze.piui;
 
 import android.app.Activity;
 import android.content.Context;
+import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,14 +72,14 @@ public class GuiUpdater extends Activity {
         consoleView.append(UserData.clientName + "@pi:/$ " + command + "\n");
 
         ScrollView scrollView = (ScrollView) view.findViewById(R.id.scrollView);
-        scrollView.scrollTo(0, scrollView.getBottom());
+        scrollView.fullScroll(View.FOCUS_DOWN);
     }
 
     public static void updateConsoleWithResponse(String response){
         consoleView.append(response + "\n" + UserData.clientName + "@pi:/$ ");
 
         ScrollView scrollView = (ScrollView) view.findViewById(R.id.scrollView);
-        scrollView.scrollTo(0, scrollView.getBottom());
+        scrollView.fullScroll(View.FOCUS_DOWN);
     }
 
 }

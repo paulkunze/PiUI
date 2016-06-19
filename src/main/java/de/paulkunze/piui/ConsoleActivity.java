@@ -26,9 +26,6 @@ public class ConsoleActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // load the user settings
-        UserData.loadSettings(getSharedPreferences("SETTINGS", Context.MODE_PRIVATE));
-
         // initialize the history display
         TextView consoleView = (TextView) findViewById(R.id.console);
         if (savedInstanceState != null) {   // reload after rotation
@@ -46,9 +43,11 @@ public class ConsoleActivity extends AppCompatActivity {
     public void sendCommand(View view){
         EditText input = (EditText) findViewById(R.id.input);
         String command = input.getText().toString();
-        GuiUpdater.updateConsoleWithCommand(command);
-        client.publish(UserData.topicOut, command);
-        input.setText("");
+        if(!command.equals("")) {
+            GuiUpdater.updateConsoleWithCommand(command);
+            client.publish(UserData.topicOut, command);
+            input.setText("");
+        }
     }
 
     /**
