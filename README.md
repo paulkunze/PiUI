@@ -12,7 +12,7 @@ The advantages are the following:
 - You can can connect multiple smartphones and multiple Pis at the same time.
 
 To get it working, you need to start a little Python script on the RaspberryPi which is included in this app. You can copy the script to your internal memory storage from within the app.
-It also requires an MQTT broker, but it is preconfigured with a public broker from Deutsche Bahn, so that it works out of the box.
+It also requires an MQTT broker, but it is preconfigured with a public broker, so that it works out of the box.
 
 ![function](/images/01.png?raw=true)
 ![function](/images/02.png?raw=true)
